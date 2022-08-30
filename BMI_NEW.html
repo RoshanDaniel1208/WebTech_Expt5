@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function calc(){
+            var weight = document.getElementById('t1').value;
+            var height = document.getElementById('t2').value;
+            var bmi_index = height/weight;
+            document.getElementById('bmi').innerHTML = bmi_index;
+        }
+    </script>
+    <title>BODY MASS INDEX [BMI]</title>
+</head>
+<div class = "main" style = "background-color: bisque;">
+<body>
+    <div class="container" style="background-color:antiquewhite;">
+        <h1 style = 'background-color:blue'>Body Mass Index Calculator [BMI]
+            <p>A measure of body fat in adults</p></h1>
+            <h3><p style = "background-color:red;">Input the values and get the result</h3></p>
+        
+    Weight <br>
+    <input type="text" id = 't1' onkeyup="calc()">kg <br>
+    <br>
+    Height <br>
+    <input type="text" id = 't2' onkeyup="calc()">cm
+<br><br>
+    <div id = 'bmi' style="color:darkred; font-size: 25px;"></div>
+
+</div>
+</div>
+
+
+
+</body>
+</html>
